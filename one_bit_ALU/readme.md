@@ -82,3 +82,27 @@ Compares two single-bit inputs (R and S) and determines:
 |101   |A = B               |a_E_b (from Comparator)     |
 |110   |A < B               |a_L_b (from Comparator)     |
 |111   |Logical AND         |and1 (from AND Gate)        |
+
+## Schematic
+
+![alt text](<Screenshot 2025-01-04 185948.png>)
+
+## Example Test Cases
+
+Here are some test cases to verify the functionality during simulation:
+
+| A1 | B1 | sel1 | Expected Output (output1) |
+|----|----|------|---------------------------|
+|0   |0   |000   |0 (Sum)                    |
+|1   |1	  |001   |1 (Carry)                  |
+|1   |0   |010   |1 (Difference)             |
+|0   |1   |011   |1 (Borrow)                 |
+|1   |0   |100   |1 (A > B)                  |
+|0   |0   |101   |1 (A = B)                  |
+|0   |1   |110   |1 (A < B)                  |
+|1   |1   |111   |1 (AND Operation)          |
+
+## wave form
+
+![alt text](<Screenshot 2025-01-04 185610.png>)
+
